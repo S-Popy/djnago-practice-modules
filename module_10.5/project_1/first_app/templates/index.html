@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<body>
-    <h3>This is home page</h3>
+<body style = "margin: 5rem">
+
+    <h1 style="text-align: center;">All filters in Django Template</h1>
+
+    <hr>
+    {% comment %} filters {% endcomment %}
+    <h3>Title Filter {{title | title}} </h3>
+    <h3>join Filter : {{str_list | join:"-"}} </h3>
+    <h3>Date filter: {{date | date:"D d M Y"}} </h3>
+    <h3>Add filter: {{value | add:"2"}} </h3>
+    <h3>Daddslash filter: {{string | addslashes}} </h3>
+    <h3>capfirst filter: {{string2 | capfirst}} </h3>
+    <h3>center filter: {{string2 | center:"15"}} </h3>
+    <h3>cut filter: {{string | cut:" "}} </h3>
+    <h3>Default filter: {{value2 | default:"nothing"}} </h3>
+    <h3>Ddictsort filter: {{dict_list | dictsort:"name"}} </h3>
+    <h3>First filter: {{str_list | first}} </h3>
+    <h3>Last filter: {{str_list | last}} </h3>
+    <h3>Length filter: {{string | length}} </h3>
+    <h3>Linenumber filter: {{str_list | linenumbers}} </h3>
+    <h3>Upper filter: {{string | upper}} </h3>
+    <h3>lower filter: {{string3 | lower}} </h3>
+    <h3>make list filter: {{string|make_list}} </h3>
+    <h3>random filter: {{str_list | random}} </h3>
+    <h3>slice filter: {{dict_list | slice:"2"}} </h3>
+    <h3>time filter: {{date | time:"H:i"}} </h3>
+    <h3>wordcount filter: {{string | wordcount}} </h3>
+    <h3>Truncatechars Filter: {{string3 | truncatechars:7}} </h3>
+    <h3>Truncatewords Filter: {{string | truncatewords:1}} </h3>
+    
+   
+   
 </body>
 </html>
